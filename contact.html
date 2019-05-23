@@ -1,63 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>About Me</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"></head>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Bootstrap Portfolio</title>
+
+</head>
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navi">
-        <a class="navbar-brand" href="./index.html" id="musa">Musa Akbari</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="./index.html">About <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./portfolio.html">Portfolio</a>
-            <li class="nav-item">
-              <a class="nav-link" href="./contact.html">Contact</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
-      </nav>
-
-    <div class="back-side">
-        <br><br>
-        <div class="main">
-            <div class="form">
-                <h2 class="identify">Contact</h2>
-                <hr><br>
-                <form action="mailto:musa.akbari@gmail.com" method="GET">
-                    <p class="pform">Name:</p><br>
-                    <input class="contactform" type="text" name="fname"><br><br>
-                    <p class="pform">Email:</p><br>
-                    <input class="contactform" type="email" name="email"><br><br>
-                    <p class="pform">Message:</p><br>
-                    <textarea class="contactform2" type="text" name="message"></textarea><br><br><br>
-                    <input id="bttn" type="submit" value="Submit"><br>
-                </form>
+            <div id="heading">
+<div class="container">
+        <div class="row"> 
+            <div class="col-md-2 col-sm-2 col-xs-1">
+                <!-- header spacer left -->
+            </div>
+            <div class="col-md-8 col-sm-8 col-xs-10">
+                <!-- navbar -->
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navi"> 
+                        <a class="navbar-brand" href="./index.html" id="musa">Musa Akbari</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                          <li class="nav-item">
+                            <a class="nav-link" href="./index.html">About</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                          <li class="nav-item active">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </nav>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-1">
+                <!-- header spacer right -->
             </div>
         </div>
-        <br><br><br>
+        </div>
+    </div>
+        <div id="canvas">
+            <div class="container">
+        <div class="row">
+          
+                <div class="col-md-2 col-sm-2 col-xs-1">
+                    <!-- spacer column -->
+                </div>
+                <div class="col-md-8 col-sm-8 col-xs-10" id="main">
+                    <div class="row" id="title">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                        <!-- page title -->
+                        <h2>Portfolio</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- image and text -->
+                        <form id="mainform">
+                                <div class="form-group">
+                                  <label for="exampleFormControlInput1">Name:</label>
+                                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                                </div>
+                                <div class="form-group">
+                                        <label for="exampleFormControlInput1">Email address:</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                                </div>  
+                                <div class="form-group">
+                                  <label for="exampleFormControlSelect2">Best time to reach you? (control-click to select multiple options)</label>
+                                  <select multiple class="form-control" id="exampleFormControlSelect2">
+                                    <option>Morning</option>
+                                    <option>Afternoon</option>
+                                    <option>Evening</option>
+                                    <option>Weekends</option>
+                                  </select>
+                                </div>
+                                <div class="form-group">
+                                  <label for="exampleFormControlTextarea1">Message:</label>
+                                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                                </div>
+                              </form>
+                        
+                    </div>
+                  
+                </div>
+                  <div class="col-md-2 col-sm-2 col-xs-1">
+                            <!-- spacer column -->
+                        </div>
+        </div>
+        </div>    </div>
+
+        <div class="row" id="footing">
+            <!-- footer -->
+            <footer id="footing">Copyright ©</footer>
+        </div>
     </div>
 
-    <footer class="footing">Copyright ©</footer>
+
+
+
+
+
+
 
 </body>
-
 </html>

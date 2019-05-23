@@ -1,13 +1,15 @@
+h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 #navi {
-    width: 70%;
-    margin: 0 auto;
     background-color: teal;
+    align-content: center;
+    height: 50px;
 }
 
 #musa {
-    /* background-color: teal;
-    color: white; */
-    padding: 5px 25px;
+    margin-left: -10px;
     font-weight: bolder;
     letter-spacing: 5px;
     font-family: initial;
@@ -18,35 +20,71 @@
 #profile {
     width: 200px;
     height: 200px;
-    float: left;
+    float: left !important;
     margin-right: 20px;
     margin-top: 10px;
 }
 
-.main {
-    width: 70%;
+#main {
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #eeeeee;
+    background-color: #f8f9fa;
 }
 
-.canvas {
+#canvas {
     background-image: url(../images/beige-tiles.png);
     background-repeat: repeat;
+    width: 100%;
     border-top: 3px solid teal;
 }
 
-.footing {
+#title {
+    border-bottom: 1px solid #7e7e7e;
+}
+
+#footing {
     background-color: #777777;
     width: 100%;
-    height: 70px;
+    height: 50px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     color: #eeeeee;
-    padding-top: 22px;
+    padding-top: 10px;
 }
 
-.heading {
-    background-color: #eeeeee;
+#heading {
+    background-color: #f8f9fa;
+}
+
+.caption {
+    text-align: center;
+    width: 200px;
+    height: 35px;
+    margin-left: 10px;
+    background-color: #4aaaa5;
+    color: #eeeeee;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    bottom: 60px;
+}
+
+.pform {
+    font-size: 20px;
+}
+
+.contactform {
+    width: 100%;
+    height: 30px;
+}
+
+.contactform2 {
+    width: 100%;
+    height: 300px;
+}
+
+#mainform {
+    width: 100%;
 }
